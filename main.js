@@ -44,7 +44,7 @@ define(["libraries/WebWorldWind-develop/src/WorldWind.js",
   };
 
   var boundaryLayer = new WorldWind.RenderableLayer("Project area");
-  var boundaryShapefile = new WorldWind.Shapefile("data/project-area/boundary.shp");
+  var boundaryShapefile = new WorldWind.Shapefile("data/boundary/boundary.shp");
   boundaryShapefile.load(null, shapeConfigurationCallback, boundaryLayer);
   wwd.addLayer(boundaryLayer);
   /**
